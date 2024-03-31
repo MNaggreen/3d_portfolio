@@ -72,7 +72,7 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      dpr={[1, 2]}
+      dpr={[1, 2]}      
       camera={{ position: [20, 3, 5], fov: 25 }}
       // это значение необходимо здесь чтобы правильно рендерить модель
       gl={{ preserveDrawingBuffer: true }}
@@ -81,7 +81,7 @@ const ComputersCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         {/* это позволит нам упралять и круть нашу модель */}
         <OrbitControls
-          /* autoRotate */
+          autoRotate
           enableZoom={false}
           /* все что ниже установит ограничение чтобы мы могли круть только в определенном направлении */
           maxPolarAngle={Math.PI / 2}

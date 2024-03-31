@@ -34,7 +34,7 @@ const EarthCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
         /* авторотация */
-          /* autoRotate */
+          autoRotate
           /* запрет зума */
           enableZoom={false}
           /* ограничение по осям для пользователя (вращение) */

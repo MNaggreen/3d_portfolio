@@ -15,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  web_site_url
 }) => {
   return (
     /* все появится равномерно с анимацией 
@@ -29,9 +30,11 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
+        <a href={web_site_url}>
         {/* контейнер для карточек */}
         <div className="relative w-full h-[230px]">
           {/* картинка проекта */}
+          
           <img
             src={image}
             alt="project_image"
@@ -51,7 +54,7 @@ const ProjectCard = ({
               />
             </div>
           </div>
-        </div>
+        </div></a>
 
         {/* заголовок сайта и описания */}
         <div className="mt-5">
@@ -80,7 +83,7 @@ const Works = () => {
     <>
       {/* плавное появение текста при прокрутке */}
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Мои работы</p>
+        <p className={`${styles.sectionSubText} `}>Самые интересные</p>
         <h2 className={`${styles.sectionHeadText}`}>Проекты.</h2>
       </motion.div>
 
