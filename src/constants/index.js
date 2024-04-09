@@ -31,6 +31,9 @@ import {
   fullstack,
   lyppreview,
   gptv,
+  ecobankpreview,
+  spikestorepreview,
+  caffepetite2
 } from '../assets'
 
 export const navLinks = [
@@ -128,7 +131,7 @@ const experiences = [
     company_name: 'Stepik',
     icon: python,
     iconBg: '#1d1836',
-    date: 'Январь 2022 - Декабрь 2022',
+    date: 'Январь 2022 - Декабрь 2023',
     points: [
       'Базовый уровень: ввод-вывод данных, условные операторы, типы данных, циклы for и while, строковый тип данных, списки, функции.',
       'Продвинутый уровень: Вложенные списки, матрицы, кортежи, множества, словари, модули(random, string, decimal, fractions, complex, turtle), функции.',
@@ -146,7 +149,7 @@ const experiences = [
       'Базовая верстка HTML+CSS с использованием Microsoft Visual Studio Code, GIT, NPM.',
       'Продвинутая адаптиная, кросс-браузерная верстка с использованием SASS CSS + Grid или Flexbox.',
       'Добавление логики в приложения с ипользованием базового Java Script стандарта EСMAScript 14 (2023)',
-      'Продвинутый уровень JS, использование хуков, а также централизиронного состояния при помощи Redux.',
+      'Продвинутый уровень JS, использование хуков, а также состояния для хранения и изменения информации.',
     ],
   },
   {
@@ -158,7 +161,8 @@ const experiences = [
     points: [
       'Разработка и сопровождение веб-приложений с использованием связки Vite.js + React.js + Tailwind CSS и других связанных технологий.',
       'Сотрудничество с кросс-функциональными командами, включая дизайнеров, менеджеров по продуктам и других разработчиков, для создания высококачественных продуктов.',
-      'Внедрение адаптивного дизайна и обеспечение кроссбраузерной совместимости, а также анимаций(Tilt, GASP) и 3D моделей, используя Three.js.',
+      'Продвинутый уровень React, c использованием централизированного состояния благодаря Redux.',
+      'Внедрение адаптивного дизайна и обеспечение кроссбраузерной совместимости, а также анимаций(Tilt, GSAP) и 3D моделей, используя Three.js.',
       'Участие в обзорах кода и предоставление конструктивной обратной связи с другими разработчиками.',
     ],
   },
@@ -170,9 +174,9 @@ const experiences = [
     date: 'Активно изучаю в данный момент',
     points: [
       'Отправка и получение данных с сервера.',
-      'Опыт в API для получения информации и вывода в приложении.',
-      'Работа в  CMS системах, таких как Appwrite, a также Sanity.',
-      'Комплексоное создание социальной сети Lypgraph используя CMS .',
+      'Опыт работы с API для получения информации и дальнейшего полказа в приложении.',
+      'Работа в  CMS системах, таких как Appwrite, a также Sanity и WordPress.',
+      'Комплексоное создание социальной сети Lypgraph используя CMS.',
     ],
   },
 ]
@@ -208,7 +212,7 @@ const projects = [
   {
     name: 'Lypgraph',
     description:
-      'Веб-платформа, которая позволяет пользователям загружать, сохранять и лайкать изображения, обеспечивая удобное и эффективное решение для обмена настроением.',
+      'Социальная сеть, которая позволяет пользователям загружать, сохранять и реагировать посредством лайков на изображения, обеспечивая удобное и эффективное решение для обмена настроением.',
     tags: [
       {
         name: 'react',
@@ -237,7 +241,7 @@ const projects = [
         color: 'blue-text-gradient',
       },
       {
-        name: 'shacn',
+        name: 'shadcn',
         color: 'green-text-gradient',
       },
       {
@@ -252,14 +256,14 @@ const projects = [
   {
     name: 'Fleght AI',
     description:
-      'Современный дизайн, а также использование GASP + Parallax.js позволило создать готовый SPA под использование и подажу доступа к платформы генерирующей текст, видео, а также улучшение фото и использованием искусственного интеллекта.',
+      'Современный дизайн, а также использование GSAP + Parallax.js позволило создать готовый SPA под использование и подажу доступа к платформы генерирующей текст, видео, а также улучшение фото и использованием искусственного интеллекта.',
     tags: [
       {
         name: 'vitejs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'gasp',
+        name: 'gsap',
         color: 'green-text-gradient',
       },
       {
@@ -270,6 +274,72 @@ const projects = [
     image: tripguide,
     source_code_link: 'https://github.com/MNaggreen/Fleght',
     web_site_url: 'https://fleght.netlify.app/' 
+  },
+  {
+    name: 'Caffè',
+    description:
+      'Уникальный дизайн веб страници, посвященной представлению не менее уникального итальянского кафе в Москве. На сайте представлена часть меню, история ресторана и конечно же частичка Италии.',
+    tags: [
+      {
+        name: 'vitejs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'react',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: caffepetite2,
+    source_code_link: 'https://github.com/MNaggreen/Caff-',
+    web_site_url: 'https://caffe-petite.netlify.app'
+  },
+  {
+    name: 'Spike',
+    description:
+      'Магазин спортивных кроссовок представляющий разные модели, а также возможность добавлять товары и расширять предложение. Готовая верстка под интернет магазин',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'vitejs',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: spikestorepreview,
+    source_code_link: 'https://github.com/MNaggreen/Spike',
+    web_site_url: 'https://spikestore.netlify.app/'
+  },
+  {
+    name: 'ecoBank',
+    description:
+      'Первый в своем роде экоБанк, заботящийся о природе и представляющий ультимативную аналитику расходов и доходов, а также способы заработать на инвестициях, все это сделано, используя современный дизайн.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'shadcn',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: ecobankpreview,
+    source_code_link: 'https://github.com/MNaggreen/ecoBank',
+    web_site_url: 'https://eco-bank.netlify.app'
   },
 ]
 

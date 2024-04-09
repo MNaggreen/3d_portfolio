@@ -43,16 +43,17 @@ const ProjectCard = ({
 
           {/* непосредственно сама карточка и ссылка на гитхаб */}
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
+            <a href={source_code_link}> <div
               onClick={() => window.open(source_code_link, '_blank')}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
+            >      
+                
               <img
                 src={github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
-            </div>
+            </div></a>
           </div>
         </div></a>
 
@@ -97,7 +98,12 @@ const Works = () => {
           примеров моей работы. Каждый проект кратко описан с помощью ссылок на
           репозитории кода и живые демонстрации в нем. Это отражает мою
           способность решать сложные задачи, работать с различными технологиями
-          и эффективно управлять проектами.
+          и эффективно управлять проектами.<br/><br/>
+          Краткое резюме того, что я обычно использую:<br/>
+          Frontend: React.js, Three.js Tailwind, DaisyUI, ShadCN, GSAP, Tilt<br/>
+          Backend: API, Vercel, Netlify, Reg, Appwrite, Sanity<br/>
+          
+          
         </motion.p>
       </div>
 

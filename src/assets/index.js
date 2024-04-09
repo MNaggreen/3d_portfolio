@@ -36,6 +36,9 @@ import fullstack from './company/fullstack.png'
 import carrent from './carrent.png'
 import jobit from './jobit.png'
 import tripguide from './tripguide.png'
+import caffepetite2 from './caffepetite2.png'
+import spikestorepreview from './spikestorepreview.png'
+import ecobankpreview from './ecobankpreview.png'
 
 import lyppreview from './company/lyppreview.png'
 
@@ -78,5 +81,8 @@ export {
   ballsmobile,
   earthmobile,
   lyppreview,
-  gptv
+  gptv,
+  ecobankpreview,
+  spikestorepreview,
+  caffepetite2
 }
